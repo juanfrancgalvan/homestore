@@ -1,0 +1,45 @@
+.about {
+  background-color: #004065;
+  height: auto;
+
+  .about__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 50px;
+  }
+
+  .about__description {
+    color: white;
+
+    .about__title {
+      font-size: 2.7rem;
+    }
+  }
+}
+
+@media only screen and (width <=992px) {
+  .about {
+    .about__list {
+      grid-template-columns: unset;
+      gap: unset;
+    }
+
+    .about__description {
+      padding: 50px;
+    }
+  }
+}
+
+@media only screen and (width <=576px) {
+  .about {
+    .about__list {
+      grid-template-columns: auto;
+      gap: 0;
+    }
+
+    .about__description {
+      padding: 50px 20px;
+    }
+  }
+}

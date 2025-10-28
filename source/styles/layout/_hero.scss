@@ -1,0 +1,15 @@
+.hero {
+  background-image: url('/build/images/hero1500w.webp');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-clip: border-box;
+  height: 40rem;
+}
+
+@media only screen and (width <=576px) {
+  .hero {
+    background-attachment: scroll;
+  }
+}

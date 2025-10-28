@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta name="author" content="Juan Francisco Galván">
+  <meta name="date" content="27/07/2023">
+  <meta name="description" content="Tienda de muebles para todos">
+  <meta name="keywords" content="Tienda, Muebles, E-commerce">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="build/images/favicon.webp" type="image/webp">
+  <link rel="preload" href="build/styles/style.min.css" type="text/css" as="style">
+  <link rel="stylesheet" href="build/styles/style.min.css">
+  <script src="build/scripts/script.min.js" defer></script>
+  <title>Home Store | Info</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__responsive">
+      <h1 class="header__logo">Home<span>Store</span></h1>
+      <img src="build/images/bars.svg" alt="Bar menu" class="header__menu">
+    </div>
+    <nav class="nav">
+      <a href="index.html" class="nav__link">Home</a>
+      <a href="store.html" class="nav__link">Store</a>
+      <a href="gallery.html" class="nav__link">Gallery</a>
+      <a href="blog.html" class="nav__link">Blog</a>
+      <a href="info.html" class="nav__link">Info</a>
+      <a href="contact.html" class="nav__link">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="info container">
+      <h2 class="info__title">About Us</h2>
+      <div class="info__list">
+        <picture>
+          <source srcset="build/images/info350w.webp" media="(width <= 576px)" type="image/webp">
+          <img src="build/images/info.webp" alt="Info Image" width="300" height="200" loading="lazy" class="info__image">
+        </picture>
+        <div class="info__text">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime impedit dicta vero recusandae eligendi autem voluptates molestiae id sunt vitae nam doloribus eos odio illum quibusdam quos provident, adipisci a, unde obcaecati, laudantium voluptatem. Voluptates aspernatur nostrum asperiores nesciunt dolorum quos incidunt odit non minus accusantium architecto, rerum blanditiis id.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime impedit dicta vero recusandae eligendi autem voluptates molestiae id sunt vitae nam doloribus eos odio illum quibusdam quos provident, adipisci a, unde obcaecati, laudantium voluptatem.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__list">
+      <div class="footer__section">
+        <h3 class="footer__title">Categories</h3>
+        <nav class="footer__menu">
+          <a href="#" class="footer__link">Kitchen</a>
+          <a href="#" class="footer__link">Office</a>
+          <a href="#" class="footer__link">Garden</a>
+          <a href="#" class="footer__link">Garage</a>
+          <a href="#" class="footer__link">Bedrooms</a>
+        </nav>
+      </div>
+      <div class="footer__section">
+        <h3 class="footer__title">About Us</h3>
+        <nav class="footer__menu">
+          <a href="#" class="footer__link">Our history</a>
+          <a href="#" class="footer__link">Mission, Vision & Values</a>
+          <a href="#" class="footer__link">Carrers</a>
+          <a href="#" class="footer__link">Privacy Policy</a>
+          <a href="#" class="footer__link">Terms of Service</a>
+        </nav>
+      </div>
+      <div class="footer__section">
+        <h3 class="footer__title">Support</h3>
+        <nav class="footer__menu">
+          <a href="#" class="footer__link">Questions</a>
+          <a href="#" class="footer__link">Online help</a>
+          <a href="#" class="footer__link">Trust & Security</a>
+        </nav>
+      </div>
+    </div>
+    <p class="footer__copyright">Home Store©</p>
+  </footer>
+</body>
+</html>

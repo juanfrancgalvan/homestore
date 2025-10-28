@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta name="author" content="Juan Francisco Galván">
+  <meta name="date" content="27/07/2023">
+  <meta name="description" content="Tienda de muebles para todos">
+  <meta name="keywords" content="Tienda, Muebles, E-commerce">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="build/images/favicon.webp" type="image/webp">
+  <link rel="preload" href="build/styles/style.min.css" type="text/css" as="style">
+  <link rel="stylesheet" href="build/styles/style.min.css">
+  <script src="build/scripts/script.min.js" defer></script>
+  <title>Home Store | Blog</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__responsive">
+      <h1 class="header__logo">Home<span>Store</span></h1>
+      <img src="build/images/bars.svg" alt="Bar menu" class="header__menu">
+    </div>
+    <nav class="nav">
+      <a href="index.html" class="nav__link">Home</a>
+      <a href="store.html" class="nav__link">Store</a>
+      <a href="gallery.html" class="nav__link">Gallery</a>
+      <a href="blog.html" class="nav__link">Blog</a>
+      <a href="info.html" class="nav__link">Info</a>
+      <a href="contact.html" class="nav__link">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="blog container">
+      <h2 class="blog__title">Blog</h2>
+      <div class="blog__list">
+        <div class="blog__guide">
+          <article class="blog__entry">
+            <h3 class="blog__title">Style Guide</h3>
+            <picture>
+              <source srcset="build/images/blog/350w/350w-0.webp" media="(width<=576px)" type="image/webp">
+              <img src="build/images/blog/700w/700w-0.webp" alt="Blog" width="300" height="200" loading="lazy" class="blog__image">
+            </picture>
+            <div class="blog__content">
+              <div class="blog__meta">
+                <p>Date: <span>19/10/2025</span></p>
+                <p>Writed by: <span>HomeStore</span></p>
+              </div>
+              <div class="blog__text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium id numquam ducimus alias commodi eveniet, impedit amet! Quidem et tempore obcaecati vitae voluptatibus ipsam? Quae repudiandae sequi quas numquam nam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati provident beatae fugiat laudantium possimus harum, magnam architecto soluta doloribus itaque dolores amet maiores pariatur ea quisquam voluptatem numquam? In, nobis!</p>
+              </div>
+              <a href="entrie.html" class="button">Read</a>
+            </div>
+          </article>
+          <article class="blog__entry">
+            <h3 class="blog__title">Price Guide</h3>
+            <picture>
+              <source srcset="build/images/blog/350w/350w-1.webp" media="(width<=576px)" type="image/webp">
+              <img src="build/images/blog/700w/700w-1.webp" alt="Blog" width="300" height="200" loading="lazy" class="blog__image">
+            </picture>
+            <div class="blog__content">
+              <div class="blog__meta">
+                <p>Date: <span>19/10/2025</span></p>
+                <p>Writed by: <span>HomeStore</span></p>
+              </div>
+              <div class="blog__text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium id numquam ducimus alias commodi eveniet, impedit amet! Quidem et tempore obcaecati vitae voluptatibus ipsam? Quae repudiandae sequi quas numquam nam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati provident beatae fugiat laudantium possimus harum, magnam architecto soluta doloribus itaque dolores amet maiores pariatur ea quisquam voluptatem numquam? In, nobis!</p>
+              </div>
+              <a href="entrie.html" class="button">Read</a>
+            </div>
+          </article>
+          <article class="blog__entry">
+            <h3 class="blog__title">Color Guide</h3>
+            <picture>
+              <source srcset="build/images/blog/350w/350w-2.webp" media="(width<=576px)" type="image/webp">
+              <img src="build/images/blog/700w/700w-2.webp" alt="Blog" width="300" height="200" loading="lazy" class="blog__image">
+            </picture>
+            <div class="blog__content">
+              <div class="blog__meta">
+                <p>Date: <span>19/10/2025</span></p>
+                <p>Writed by: <span>HomeStore</span></p>
+              </div>
+              <div class="blog__text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium id numquam ducimus alias commodi eveniet, impedit amet! Quidem et tempore obcaecati vitae voluptatibus ipsam? Quae repudiandae sequi quas numquam nam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati provident beatae fugiat laudantium possimus harum, magnam architecto soluta doloribus itaque dolores amet maiores pariatur ea quisquam voluptatem numquam? In, nobis!</p>
+              </div>
+              <a href="entrie.html" class="button">Read</a>
+            </div>
+          </article>
+        </div>
+        <aside class="blog__aside">
+          <h3 class="blog__title">Other Blog Entries</h3>
+          <ul class="blog__list--aside">
+            <li>
+              <a href="entrie.html">Color Guide</a>
+            </li>
+            <li>
+              <a href="entrie.html">New Models</a>
+            </li>
+            <li>
+              <a href="entrie.html">Guide to interior design</a>
+            </li>
+            <li>
+              <a href="entrie.html">Guide to exterior design</a>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__list">
+      <div class="footer__section">
+        <h3 class="footer__title">Categories</h3>
+        <nav class="footer__menu">
+          <a href="#" class="footer__link">Kitchen</a>
+          <a href="#" class="footer__link">Office</a>
+          <a href="#" class="footer__link">Garden</a>
+          <a href="#" class="footer__link">Garage</a>
+          <a href="#" class="footer__link">Bedrooms</a>
+        </nav>
+      </div>
+      <div class="footer__section">
+        <h3 class="footer__title">About Us</h3>
+        <nav class="footer__menu">
+          <a href="#" class="footer__link">Our history</a>
+          <a href="#" class="footer__link">Mission, Vision & Values</a>
+          <a href="#" class="footer__link">Carrers</a>
+          <a href="#" class="footer__link">Privacy Policy</a>
+          <a href="#" class="footer__link">Terms of Service</a>
+        </nav>
+      </div>
+      <div class="footer__section">
+        <h3 class="footer__title">Support</h3>
+        <nav class="footer__menu">
+          <a href="#" class="footer__link">Questions</a>
+          <a href="#" class="footer__link">Online help</a>
+          <a href="#" class="footer__link">Trust & Security</a>
+        </nav>
+      </div>
+    </div>
+    <p class="footer__copyright">Home Store©</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,42 @@
+.categories {
+  .categories__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .categorie__image {
+    height: 250px;
+  }
+
+  .categorie__link {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    border-bottom-right-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+      background-color: #004065;
+      color: #ffffff;
+    }
+  }
+}
+
+@media only screen and (width <=576px) {
+  .categories {
+    .categories__list {
+      grid-template-columns: unset;
+    }
+
+    .categorie__image {
+      height: 170px;
+    }
+
+    .categorie__link {
+      background-color: #004065;
+      color: #ffffff;
+    }
+  }
+}

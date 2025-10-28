@@ -1,0 +1,44 @@
+.gallery {
+  .gallery__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .gallery__image {
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.02);
+    }
+  }
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .9);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+
+  img {
+    display: block;
+    max-width: 70rem;
+  }
+}
+
+@media only screen and (width<=576px) {
+  .gallery {
+    .gallery__list {
+      grid-template-columns: unset;
+    }
+  }
+}

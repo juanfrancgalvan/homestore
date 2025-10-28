@@ -1,0 +1,40 @@
+.form {
+  max-width: 600px;
+  margin: 0 auto;
+
+  fieldset {
+    border: 1px solid #c2c2c2;
+    margin-bottom: 20px;
+  }
+
+  legend {
+    background-color: #004065;
+    width: 100%;
+    text-align: center;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+
+  .field {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+
+    label {
+      flex-basis: 100px;
+    }
+
+    input:not([type="radio"]),
+    textarea,
+    select {
+      flex: 1;
+      border: 1px solid #e1e1e1;
+      border-radius: 10px;
+      padding: 10px;
+    }
+  }
+}

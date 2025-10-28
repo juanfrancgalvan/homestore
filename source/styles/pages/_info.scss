@@ -1,0 +1,26 @@
+.info {
+  margin-top: 50px;
+
+  .info__title {
+    margin-bottom: 30px;
+  }
+
+  .info__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 40px;
+  }
+
+  .info__image {
+    border-radius: 5px;
+  }
+}
+
+@media only screen and (width <=576px) {
+  .info {
+    .info__list {
+      grid-template-columns: unset;
+    }
+  }
+}

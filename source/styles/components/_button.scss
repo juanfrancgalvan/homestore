@@ -1,0 +1,25 @@
+.button {
+  display: block;
+  background-color: #004065;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 20px;
+  transition: background-color .3s ease-out;
+  text-align: center;
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  width: 50%;
+  margin: 10px auto;
+
+  &:hover {
+    background-color: #003351;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (width <=576px) {
+  .button {
+    width: 100%;
+  }
+}
