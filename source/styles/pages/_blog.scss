@@ -48,7 +48,7 @@
 }
 
 
-@media only screen and (width<=576px) {
+@media only screen and (width<=992px) {
   .blog {
     .blog__list {
       grid-template-columns: auto;
@@ -67,4 +67,10 @@
     }
   }
 
+  .footer {
+    .footer__list {
+      padding: 80px 20px;
+      gap: unset;
+    }
+  }
 }

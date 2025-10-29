@@ -35,6 +35,12 @@
     .products__list {
       grid-template-columns: repeat(2, 1fr);
     }
+
+    .product {
+      .product__image {
+        height: 200px;
+      }
+    }
   }
 }
 
