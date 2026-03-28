@@ -1,0 +1,25 @@
+@use 'variables' as var;
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == 'sm' {
+    @media screen and (max-width: var.$sm) {
+      @content;
+    }
+  } @else if $breakpoint == 'md' {
+    @media screen and (max-width: var.$md) {
+      @content;
+    }
+  } @else if $breakpoint == 'lg' {
+    @media screen and (max-width: var.$lg) {
+      @content;
+    }
+  } @else if $breakpoint == 'xl' {
+    @media screen and (max-width: var.$xl) {
+      @content;
+    }
+  } @else if $breakpoint == 'xxl' {
+    @media screen and (max-width: var.$xxl) {
+      @content;
+    }
+  }
+}

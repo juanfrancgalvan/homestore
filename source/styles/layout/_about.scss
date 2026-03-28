@@ -1,45 +1,34 @@
+@use '../base/mixins' as mix;
+
 .about {
   background-color: #004065;
   height: auto;
 
-  .about__list {
+  &__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 50px;
-  }
 
-  .about__description {
-    color: white;
-
-    .about__title {
-      font-size: 2.7rem;
-    }
-  }
-}
-
-@media only screen and (width <=992px) {
-  .about {
-    .about__list {
+    @include mix.responsive('lg') {
       grid-template-columns: unset;
       gap: unset;
     }
+  }
 
-    .about__description {
+  &__description {
+    color: white;
+
+    @include mix.responsive('lg') {
       padding: 50px;
     }
+
+    @include mix.responsive('sm') {
+      padding: 20px;
+    }
   }
-}
 
-@media only screen and (width <=576px) {
-  .about {
-    .about__list {
-      grid-template-columns: auto;
-      gap: 0;
-    }
-
-    .about__description {
-      padding: 50px 20px;
-    }
+  &__title {
+    font-size: 2.7rem;
   }
 }

@@ -1,11 +1,17 @@
+@use '../base/mixins' as mix;
+
 .gallery {
-  .gallery__list {
+  &__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+
+    @include mix.responsive('sm') {
+      grid-template-columns: unset;
+    }
   }
 
-  .gallery__image {
+  &__image {
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
@@ -15,30 +21,21 @@
       transform: scale(1.02);
     }
   }
-}
 
-.overlay {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, .9);
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
+  &__overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .9);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
 
-  img {
-    display: block;
-    max-width: 70rem;
-  }
-}
-
-@media only screen and (width<=576px) {
-  .gallery {
-    .gallery__list {
-      grid-template-columns: unset;
+    img {
+      max-width: 70rem;
     }
   }
 }

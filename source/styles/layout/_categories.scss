@@ -1,15 +1,31 @@
+@use '../base/mixins' as mix;
+
 .categories {
-  .categories__list {
+  &__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-  }
 
-  .categorie__image {
+    @include mix.responsive('sm') {
+      grid-template-columns: unset;
+    }
+  }
+}
+
+.categorie {
+  &__image {
     height: 250px;
+
+    @include mix.responsive('lg') {
+      height: 130px;
+    }
+
+    @include mix.responsive('sm') {
+      height: 170px;
+    }
   }
 
-  .categorie__link {
+  &__link {
     display: block;
     text-align: center;
     padding: 20px;
@@ -17,32 +33,12 @@
     border-bottom-right-radius: 10px;
     transition: background-color 0.3s ease, color 0.3s ease;
 
-    &:hover {
+    @include mix.responsive('sm') {
       background-color: #004065;
       color: #ffffff;
     }
-  }
-}
 
-@media only screen and (max-width: 992px) {
-  .categories {
-    .categorie__image {
-      height: 130px;
-    }
-  }
-}
-
-@media only screen and (width <=576px) {
-  .categories {
-    .categories__list {
-      grid-template-columns: unset;
-    }
-
-    .categorie__image {
-      height: 170px;
-    }
-
-    .categorie__link {
+    &:hover {
       background-color: #004065;
       color: #ffffff;
     }

@@ -1,3 +1,5 @@
+@use '../base/mixins' as mix;
+
 .hero {
   background-image: url('/build/images/hero1500w.webp');
   background-attachment: fixed;
@@ -6,10 +8,8 @@
   background-position: center;
   background-clip: border-box;
   height: 40rem;
-}
 
-@media only screen and (width <=992px) {
-  .hero {
+  @include mix.responsive('sm') {
     background-attachment: scroll;
   }
 }

@@ -1,25 +1,22 @@
-// Seleccionar elemento
 const menu = document.querySelector('.header__menu');
-const nav = document.querySelector('nav')
+const nav = document.querySelector('nav');
+const images = document.querySelectorAll('.gallery__image');
 
 menu.addEventListener('click', showMenu);
 
-function showMenu() { nav.classList.toggle('show') }
+for (let image of images) {
+  image.addEventListener('click', showImage);
+}
 
-// Seleccionar imágenes
-const images = document.querySelectorAll('.gallery__image');
-// Eventos para ampliar imágenes
-for (let image of images) { image.addEventListener('click', showImage); }
-// Mostrar imágenes
+function showMenu() {
+  nav.classList.toggle('show');
+}
+
 function showImage(img) {
-  // Seleccionando los elementos
   const body = document.querySelector('body');
-  // Creando un div con la clase overlay
   const overlay = document.createElement('div');
-  overlay.classList.toggle('overlay');
-  // Seleccionando las imágenes para mostrarlas
+  overlay.classList.toggle('gallery__overlay');
   const image = document.createElement('img');
-  // Creando la imágen
   image.src = img.target.dataset.highRes;
   image.alt = img.target.alt;
   image.width = 300;
@@ -27,12 +24,9 @@ function showImage(img) {
   image.loading = 'lazy';
   image.fetchPriority = 'high';
   image.decoding = 'async';
-  // Enlazando al overlay la imágen
-  overlay.appendChild(image)
-  // Enlazando al body el overlay
+  overlay.appendChild(image);
   body.appendChild(overlay);
-  // Eliminar el overlay apenas toque la pantalla
-  overlay.addEventListener('click', function () {
+  overlay.onclick = function () {
     overlay.remove();
-  })
+  };
 }

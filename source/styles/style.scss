@@ -1,5 +1,4 @@
-@use 'vendors';
-@use 'base';
-@use 'layout';
-@use 'pages';
-@use 'components';
+@forward '../../node_modules/normalize.css/normalize.css';
+@forward 'base';
+@forward 'layout';
+@forward 'pages';
