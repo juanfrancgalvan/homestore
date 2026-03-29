@@ -10,7 +10,7 @@
     right: 0;
     left: 0;
   }
-  
+
   &__responsive {
     display: flex;
     flex-direction: row;
@@ -63,8 +63,10 @@
     }
 
     &__link {
-      font-size: 1.3rem;
-      padding: 5px 0;
+      @include mix.responsive('sm') {
+        font-size: 1.3rem;
+        padding: 5px 0;
+      }
     }
   }
 }
